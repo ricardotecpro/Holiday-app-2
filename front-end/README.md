@@ -87,3 +87,4 @@ A página será recarregada sempre que você fizer alterações.
 Cria o aplicativo para produção na pasta `build`.  
 Isso corretamente empacota o React no modo de produção e otimiza o build para o melhor desempenho.
 
+**Este projeto é implantado automaticamente com GitHub Actions.**
