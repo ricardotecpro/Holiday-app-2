@@ -44,7 +44,7 @@ export default function HolidayCard({ holiday, total, index }) {
               })()
             ) : (
               (() => {
-                const { icon, label } = holidayTypeIcons.Default;
+                const { icon } = holidayTypeIcons.Default;
                 return (
                   <Box className="holidayIconWrapper">
                     <Typography variant="caption">Sem tipo</Typography>

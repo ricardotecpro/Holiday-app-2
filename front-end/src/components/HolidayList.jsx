@@ -12,7 +12,6 @@ export default function HolidayList() {
   const { state, dispatch } = useContext(HolidayContext);
   const { apiHolidays, customHolidays, activeSource, loading, error, searchHistory } = state;
 
-  const [showAll, setShowAll] = useState(false);
   const [filterMonth, setFilterMonth] = useState("");
   const [filterType, setFilterType] = useState("");
   const holidayTypes = [
