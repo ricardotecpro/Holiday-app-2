@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./back-end
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./back-end/certs:/usr/src/app/certs
+    env_file:
+      - ./back-end/.env
+
+  frontend:
+    build: ./front-end
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
